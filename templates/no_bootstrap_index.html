@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+    <meta charset="UTF-8">
+    <title> Text Utils </title>
+</head>
+<body>
+
+<h1> Welcome to the text analyzer <br></h1>
+
+<h4>Enter Your Text Here</h4>
+
+<form action='/text_analyzer' method='get'>
+
+    <textarea name='text' style='width: 1500px; height: 155px; resize: None;'></textarea>
+    <br>
+    <input type='checkbox' name='remove_punc'>  Remove Punctuation <br>
+    <input type='checkbox' name='cap_first'>  Capitalize First <br>
+    <input type='checkbox' name='nwlnrem'>  Remove Newlines <br>
+    <input type='checkbox' name='spcrem'>  Remove Spaces <br>
+    <input type='checkbox' name='cntchr'>  Count Characters<br>
+    <input type='checkbox' name='allcap'>  Capitalize All
+    <br><br>
+    <button type='submit' class="custom-button">
+        Analyze The Text
+    </button>
+</form>
+
+<!--<script>-->
+<!--    let selectedRadio = null;-->
+
+<!--    function selectOnlyOne(radio) {-->
+<!--        // If a different radio was previously selected, deselect it-->
+<!--        if (selectedRadio && selectedRadio !== radio) {-->
+<!--            selectedRadio.checked = false;-->
+<!--        }-->
+
+<!--        // Toggle selection and update the currently selected radio-->
+<!--        if (radio.checked) {-->
+<!--            selectedRadio = radio;-->
+<!--        } else {-->
+<!--            selectedRadio = null; // Allow deselecting-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+</body>
+</html>

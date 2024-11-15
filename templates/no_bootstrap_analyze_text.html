@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyzed Text</title>
+</head>
+<body>
+
+<h1>Your analyzed text</h1>
+<hr style="width: 1500px;">
+<ul>
+    {% for key, value in params.items %}
+            <li>
+                <h3>
+                    {{ key }}
+                </h3>
+                {% if key == 'Total Character Counted' %}
+                    <input type="text" size="{{ value|length }}" value="{{value}}">
+                {% else %}
+                    <textarea readonly style="width: 1450px; height: 155px; background-color: transparent; resize: none; white-space: normal;">{{ value }}</textarea>
+                {% endif %}
+            </li>
+    {% endfor %}
+</ul>
+
+<br><br>
+
+<!--<a href='/'> Back To Home </a>-->
+
+<form action="/">
+<button type="submit"> Back to Home</button>
+</form>
+
+</body>
+</html>
